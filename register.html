@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="sampoornam.png" alt="Sampoornam Logo">
+
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="become-provider.html">Become a Provider</a>
+            <a href="admin-dashboard.html">Admin Dashboard</a>
+            <a href="auth.html" class="login-btn">Login</a>
+        </nav>
+    </header>
+    <div class="auth-container">
+        <h2>Register</h2>
+        <form id="register-form" onsubmit="return validateRegister()">
+            <label for="register-name">Name</label>
+            <input type="text" id="register-name" placeholder="Enter your name" required>
+
+            <label for="register-email">Email</label>
+            <input type="email" id="register-email" placeholder="Enter your email" required>
+
+            <label for="register-password">Password</label>
+            <input type="password" id="register-password" placeholder="Enter a password" required>
+
+            <label for="register-confirm-password">Confirm Password</label>
+            <input type="password" id="register-confirm-password" placeholder="Confirm your password" required>
+
+            <button type="submit">Register</button>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo" style="flex-direction: column; line-height: 0.6; color: orangered;">
+                <img src="sampoornam.png" alt="Sampoornam Logo"><br>
+                <span >क्योंकि हर उत्सव खास है !</span>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="become-provider.html">Become a Provider</a>
+            </div>
+        </div>
+        <p>&copy; 2024 <a style="color: #fff;" href="index.html">Sampoornam</a> | made in india</p>
+    </footer>
+    <script src="auth.js"></script>
+</body>
+</html>
