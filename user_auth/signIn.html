@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sampoornam - Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>Sampoornam.</h1>
+            <p style="color: orangered;">क्योंकि हर उत्सव खास है !</p>
+        </div>
+        <div class="right-section">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <div class="options">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Reset password</a>
+                </div>
+                <button type="submit">Sign in</button>
+                <p class="pageNavigator" >Don't have an account? <a href="signUp.html">Sign up</a></p>
+                <button class="google-login">Continue with Google</button>
+            </form>
+        </div>
+    </div>
+    <script src="signIn.js" defer></script>
+</body>
+</html>
